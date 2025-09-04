@@ -1,0 +1,65 @@
+body {
+  background: orange;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Child selector: style direct children of .container */
+.container > h1 {
+  color: black;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Descendant selector: style all links inside .container */
+.container a {
+  color: #1d428a;
+  text-decoration: underline;
+}
+
+/* Box layout using floats and clear */
+.box {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background: #fff3e0;
+  border: 2px solid #1d428a;
+  border-radius: 10px;
+  padding: 16px;
+  box-sizing: border-box;
+  min-height: 200px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Borders, padding, dimension */
+img.basketball {
+  display: block;
+  margin: 0 auto 16px auto;
+  border: 4px solid #1d428a;
+  border-radius: 50%;
+  padding: 8px;
+  width: 120px;
+  background: #fff;
+}
+
+/* CSS-based color */
+.section-title {
+  color: #e65100;
+  border-bottom: 2px solid #1d428a;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+/* CSS Visibility and Display */
+.hide-me {
+  visibility: hidden;
+}
+.remove-me {
+  display: none;
+}
